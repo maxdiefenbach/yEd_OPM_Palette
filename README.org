@@ -1,0 +1,21 @@
+#+title: README
+
+* Description
+[[https://en.wikipedia.org/wiki/Object_Process_Methodology][Object--Process Methodology]] (OPM) palette for the [[https://www.yworks.com/products/yed][yEd Editor]]
+
+* Setup
+** Install yEd
+https://www.yworks.com/products/yed/download#download
+
+** Import OPM Palette
+- Open "Manage Palette..."
+  [[file:files/Screenshot1.png]]
+
+- Create "New Section...."
+  [[file:files/Screenshot2.png]]
+
+- "Import Section...", select the =yEd_OPM_Palette.graphml= file
+  [[file:files/Screenshot3.png]]
+
+- Result
+  [[file:files/Screenshot4.png]]
