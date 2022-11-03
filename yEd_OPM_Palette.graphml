@@ -17,89 +17,67 @@
   <key for="edge" id="d13" yfiles.type="edgegraphics"/>
   <graph edgedefault="directed" id="G">
     <node id="n0">
-      <data key="d3"><![CDATA[96b1f6b9-205b-4af9-aef3-9761b3db0fbd]]></data>
-      <data key="d4"><![CDATA[Physical Systemic Object]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[75cfa478-38bf-4224-b716-6d307e228804]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Physical Systemic Object]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ShapeNode>
           <y:Geometry height="90.0" width="150.0" x="0.0" y="30.0"/>
           <y:Fill color="#FFFFFF" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#339966" type="line" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="50.20703125" x="49.896484375" y="37.0">Phys. Sys.<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="60.70703125" x="44.646484375" xml:space="preserve" y="35.93359375">Phys. Sys.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
           <y:DropShadow color="#C0C0C0" offsetX="5" offsetY="5"/>
         </y:ShapeNode>
       </data>
     </node>
     <node id="n1">
-      <data key="d3"><![CDATA[57b1cdfc-ebec-4b71-8d41-bf931188111a]]></data>
-      <data key="d4"><![CDATA[Informational Systemic Object]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[864e6d22-adc2-4c1c-9787-8bd63fd4b2df]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Informational Systemic Object]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ShapeNode>
           <y:Geometry height="90.0" width="150.0" x="180.0" y="30.0"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#339966" raised="false" type="line" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="44.01953125" x="52.990234375" y="37.0">Info. Sys<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="53.130859375" x="48.4345703125" xml:space="preserve" y="35.93359375">Info. Sys<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
     </node>
     <node id="n2">
-      <data key="d3"><![CDATA[e8b55436-e2ea-48eb-851e-ffd698e07a73]]></data>
-      <data key="d4"><![CDATA[Physical Environmental Object]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[917b3d32-8130-4509-8e2b-23402a9a2fd3]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Physical Environmental Object]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ShapeNode>
           <y:Geometry height="90.0" width="150.0" x="360.0" y="30.0"/>
           <y:Fill color="#FFFFFF" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#339966" type="dashed" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="52.22265625" x="48.888671875" y="37.0">Phys. Env.<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="62.01953125" x="43.990234375" xml:space="preserve" y="35.93359375">Phys. Env.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
           <y:DropShadow color="#C0C0C0" offsetX="5" offsetY="5"/>
         </y:ShapeNode>
       </data>
     </node>
     <node id="n3">
-      <data key="d3"><![CDATA[8f0fee77-a76f-4027-a565-f8af290d30a5]]></data>
-      <data key="d4"><![CDATA[Informational Environmental Object]]></data>
+      <data key="d3" xml:space="preserve"><![CDATA[d7583419-a3bc-430b-b4ad-13b220ba3074]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Informational Environmental Object]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ShapeNode>
           <y:Geometry height="90.0" width="150.0" x="540.0" y="30.0"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#339966" raised="false" type="dashed" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="48.970703125" x="50.5146484375" y="37.0">Info. Env.<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="58.240234375" x="45.8798828125" xml:space="preserve" y="35.93359375">Info. Env.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
     </node>
     <node id="n4" yfiles.foldertype="group">
-      <data key="d3"><![CDATA[6ebcd9c5-955c-4b69-b89a-452b6d66f3a7]]></data>
-      <data key="d4"><![CDATA[Physical Systemic Stateful Object]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[a544f6f0-ac81-4dd5-ad07-dfc268722802]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Physical Systemic Stateful Object]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -107,13 +85,7 @@
               <y:Geometry height="90.0" width="150.0" x="720.0" y="30.0"/>
               <y:Fill color="#FFFFFF" color2="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#339966" type="line" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="90.28515625" x="29.857421875" y="37.0">Phys. Sys. Stateful<y:LabelModel>
-                  <y:SmartNodeLabelModel distance="0.0"/>
-                </y:LabelModel>
-                <y:ModelParameter>
-                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                </y:ModelParameter>
-              </y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="108.583984375" x="20.7080078125" xml:space="preserve" y="35.93359375">Phys. Sys. Stateful<y:LabelModel><y:SmartNodeLabelModel distance="0.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
               <y:DropShadow color="#C0C0C0" offsetX="5" offsetY="5"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
@@ -124,7 +96,7 @@
               <y:Geometry height="90.0" width="150.0" x="-15.0" y="-75.0"/>
               <y:Fill color="#FFFFFF" color2="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#339966" type="line" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="96.55615234375" x="26.721923828125" y="33.811767578125">States Folded</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="101.1630859375" x="26.721923828125" xml:space="preserve" y="33.811767578125">States Folded</y:NodeLabel>
               <y:Shape type="rectangle"/>
               <y:DropShadow color="#C0C0C0" offsetX="5" offsetY="5"/>
               <y:State closed="true" closedHeight="90.0" closedWidth="150.0" innerGraphDisplayEnabled="false"/>
@@ -137,9 +109,9 @@
       <graph edgedefault="directed" id="n4:"/>
     </node>
     <node id="n5" yfiles.foldertype="group">
-      <data key="d3"><![CDATA[9e69df97-c2ef-4f99-b140-f222a10a2667]]></data>
-      <data key="d4"><![CDATA[Informational Systemic Stateful Object]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[0d88bd61-5b2b-4d7f-98fb-c58a8bdd54f3]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Informational Systemic Stateful Object]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -147,13 +119,7 @@
               <y:Geometry height="90.0" width="150.0" x="0.0" y="150.0"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle color="#339966" raised="false" type="line" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="87.033203125" x="31.4833984375" y="37.0">Info. Sys. Stateful<y:LabelModel>
-                  <y:SmartNodeLabelModel distance="0.0"/>
-                </y:LabelModel>
-                <y:ModelParameter>
-                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                </y:ModelParameter>
-              </y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="104.8046875" x="22.59765625" xml:space="preserve" y="35.93359375">Info. Sys. Stateful<y:LabelModel><y:SmartNodeLabelModel distance="0.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -163,7 +129,7 @@
               <y:Geometry height="90.0" width="150.0" x="165.0" y="-75.0"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle color="#339966" type="line" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="96.55615234375" x="26.721923828125" y="33.811767578125">States Folded</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="101.1630859375" x="26.721923828125" xml:space="preserve" y="33.811767578125">States Folded</y:NodeLabel>
               <y:Shape type="rectangle"/>
               <y:State closed="true" closedHeight="90.0" closedWidth="150.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
@@ -175,9 +141,9 @@
       <graph edgedefault="directed" id="n5:"/>
     </node>
     <node id="n6" yfiles.foldertype="group">
-      <data key="d3"><![CDATA[62675b18-49c2-432c-b284-da4c44d001c1]]></data>
-      <data key="d4"><![CDATA[Physical Environmental Stateful Object]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[d226dad0-d7eb-417d-9970-d49ef1a9c878]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Physical Environmental Stateful Object]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -185,13 +151,7 @@
               <y:Geometry height="90.0" width="150.0" x="180.0" y="150.0"/>
               <y:Fill color="#FFFFFF" color2="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#339966" type="dashed" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.30078125" x="28.849609375" y="37.0">Phys. Env. Stateful<y:LabelModel>
-                  <y:SmartNodeLabelModel distance="0.0"/>
-                </y:LabelModel>
-                <y:ModelParameter>
-                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                </y:ModelParameter>
-              </y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="109.896484375" x="20.0517578125" xml:space="preserve" y="35.93359375">Phys. Env. Stateful<y:LabelModel><y:SmartNodeLabelModel distance="0.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
               <y:DropShadow color="#C0C0C0" offsetX="5" offsetY="5"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
@@ -202,7 +162,7 @@
               <y:Geometry height="90.0" width="150.0" x="345.0" y="-75.0"/>
               <y:Fill color="#FFFFFF" color2="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#339966" type="dashed" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="96.55615234375" x="26.721923828125" y="33.811767578125">States Folded</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="101.1630859375" x="26.721923828125" xml:space="preserve" y="33.811767578125">States Folded</y:NodeLabel>
               <y:Shape type="rectangle"/>
               <y:DropShadow color="#C0C0C0" offsetX="5" offsetY="5"/>
               <y:State closed="true" closedHeight="90.0" closedWidth="150.0" innerGraphDisplayEnabled="false"/>
@@ -215,9 +175,9 @@
       <graph edgedefault="directed" id="n6:"/>
     </node>
     <node id="n7" yfiles.foldertype="group">
-      <data key="d3"><![CDATA[b28d231b-6479-4145-8418-5c7aa508be34]]></data>
-      <data key="d4"><![CDATA[Inforamational Environmental Stateful Object]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[cb6fdb41-bf21-4dfc-aa2b-9b772becb10b]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Inforamational Environmental Stateful Object]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -225,13 +185,7 @@
               <y:Geometry height="90.0" width="150.0" x="360.0" y="150.0"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle color="#339966" raised="false" type="dashed" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="89.048828125" x="30.4755859375" y="37.0">Info. Env. Stateful<y:LabelModel>
-                  <y:SmartNodeLabelModel distance="0.0"/>
-                </y:LabelModel>
-                <y:ModelParameter>
-                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                </y:ModelParameter>
-              </y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="106.1171875" x="21.94140625" xml:space="preserve" y="35.93359375">Info. Env. Stateful<y:LabelModel><y:SmartNodeLabelModel distance="0.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -241,7 +195,7 @@
               <y:Geometry height="90.0" width="150.0" x="536.0" y="-75.0"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle color="#339966" type="dashed" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="96.55615234375" x="26.721923828125" y="33.811767578125">States Folded</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="101.1630859375" x="26.721923828125" xml:space="preserve" y="33.811767578125">States Folded</y:NodeLabel>
               <y:Shape type="rectangle"/>
               <y:State closed="true" closedHeight="90.0" closedWidth="150.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
@@ -253,151 +207,109 @@
       <graph edgedefault="directed" id="n7:"/>
     </node>
     <node id="n8">
-      <data key="d3"><![CDATA[9902c0f5-0652-450f-a6fd-ad899e706150]]></data>
-      <data key="d4"><![CDATA[State]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[9690004e-8edc-498c-900f-6b5d96dad4e6]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[State]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="85.0" x="540.0" y="180.0"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#FFFF00" raised="false" type="line" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="28.896484375" x="28.0517578125" y="7.0">State<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.751953125" x="26.1240234375" xml:space="preserve" y="5.93359375">State<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
     </node>
     <node id="n9">
-      <data key="d3"><![CDATA[75ad3c92-b07f-48de-b13b-7fde6f3e8f4f]]></data>
-      <data key="d4"><![CDATA[Inital State]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[95635609-884c-427a-81d2-1370c2b9e948]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Inital State]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="85.0" x="655.0" y="180.0"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#FFFF00" raised="false" type="line" width="5.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="58.310546875" x="13.3447265625" y="7.0">Initial State<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="68.974609375" x="8.0126953125" xml:space="preserve" y="5.93359375">Initial State<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
     </node>
     <node id="n10">
-      <data key="d3"><![CDATA[dcb1dfed-d6ed-484e-9be8-d46dd8a91c4a]]></data>
-      <data key="d4"><![CDATA[Final State]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[eb539d65-e2e8-41d4-8da0-e497a9f9952c]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Final State]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="85.0" x="770.0" y="180.0"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#FFFF00" raised="false" type="dashed" width="4.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="54.30859375" x="15.345703125" y="7.0">Final State<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.994140625" x="10.5029296875" xml:space="preserve" y="5.93359375">Final State<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
     </node>
     <node id="n11">
-      <data key="d3"><![CDATA[16165d93-80d5-4a5a-859f-89f1b70ab4d1]]></data>
-      <data key="d4"><![CDATA[Physical Systemic Process]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[514aaff0-b34c-4908-8f9c-ac1c5308018a]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Physical Systemic Process]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ShapeNode>
           <y:Geometry height="90.0" width="150.0" x="0.0" y="270.0"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#0000FF" raised="false" type="line" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="50.20703125" x="49.896484375" y="37.0">Phys. Sys.<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="60.70703125" x="44.646484375" xml:space="preserve" y="35.93359375">Phys. Sys.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
           <y:DropShadow color="#C0C0C0" offsetX="6" offsetY="4"/>
         </y:ShapeNode>
       </data>
     </node>
     <node id="n12">
-      <data key="d3"><![CDATA[b730d41d-0ea9-4974-b4a4-4f74bf45a074]]></data>
-      <data key="d4"><![CDATA[Informational Systemic Process]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[ceaf9031-76c8-400b-afd6-9389c583ce15]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Informational Systemic Process]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ShapeNode>
           <y:Geometry height="90.0" width="150.0" x="180.0" y="270.0"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#0000FF" raised="false" type="line" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="46.955078125" x="52.7364501953125" y="37.0">Info. Sys.<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.5" labelRatioY="0.0" nodeRatioX="0.16461018880208333" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="56.927734375" x="42.7637939453125" xml:space="preserve" y="35.93359375">Info. Sys.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.5" labelRatioY="0.0" nodeRatioX="0.16461018880208333" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
     </node>
     <node id="n13">
-      <data key="d3"><![CDATA[428c5b2d-e596-40b4-899e-302d111a5d71]]></data>
-      <data key="d4"><![CDATA[Physical Environmental Process]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[fd717ca3-c572-47f9-ba65-23be976cf5d1]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Physical Environmental Process]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ShapeNode>
           <y:Geometry height="90.0" width="150.0" x="360.0" y="270.0"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#0000FF" raised="false" type="dashed" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="52.22265625" x="48.888671875" y="37.0">Phys. Env.<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="62.01953125" x="43.990234375" xml:space="preserve" y="35.93359375">Phys. Env.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
           <y:DropShadow color="#C0C0C0" offsetX="6" offsetY="4"/>
         </y:ShapeNode>
       </data>
     </node>
     <node id="n14">
-      <data key="d3"><![CDATA[17cd1034-812b-4c93-b42f-d4896d2d4e12]]></data>
-      <data key="d4"><![CDATA[Informational Environmental Process]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[422885e7-2ab3-483b-9aec-4ab2158c962a]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Informational Environmental Process]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ShapeNode>
           <y:Geometry height="90.0" width="150.0" x="540.0" y="270.0"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#0000FF" raised="false" type="dashed" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="48.970703125" x="50.5146484375" y="37.0">Info. Env.<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="58.240234375" x="45.8798828125" xml:space="preserve" y="35.93359375">Info. Env.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
     </node>
     <node id="n15" yfiles.foldertype="group">
-      <data key="d3"><![CDATA[8f2e1947-60e0-47f4-81a3-420c87613b5b]]></data>
-      <data key="d4"><![CDATA[Physical Systemic Parent Process]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[da2c0613-7a57-468e-9cb8-6dc321640ecb]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Physical Systemic Parent Process]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -405,13 +317,7 @@
               <y:Geometry height="90.0" width="150.0" x="720.0" y="270.0"/>
               <y:Fill color="#FFFFFF" color2="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#0000FF" type="line" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="84.90625" x="32.546875" y="37.0">Phys. Sys. Parent<y:LabelModel>
-                  <y:SmartNodeLabelModel distance="0.0"/>
-                </y:LabelModel>
-                <y:ModelParameter>
-                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                </y:ModelParameter>
-              </y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="101.294921875" x="24.3525390625" xml:space="preserve" y="35.93359375">Phys. Sys. Parent<y:LabelModel><y:SmartNodeLabelModel distance="0.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="ellipse"/>
               <y:DropShadow color="#C0C0C0" offsetX="5" offsetY="5"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
@@ -422,7 +328,7 @@
               <y:Geometry height="90.0" width="150.0" x="-15.0" y="225.0"/>
               <y:Fill color="#FFFFFF" color2="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#0000FF" type="line" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="124.05859375" x="12.970703125" y="33.811767578125">Processes Folded</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="128.5556640625" x="12.970703125" xml:space="preserve" y="33.811767578125">Processes Folded</y:NodeLabel>
               <y:Shape type="ellipse"/>
               <y:DropShadow color="#B3A691" offsetX="5" offsetY="5"/>
               <y:State closed="true" closedHeight="90.0" closedWidth="150.0" innerGraphDisplayEnabled="false"/>
@@ -435,9 +341,9 @@
       <graph edgedefault="directed" id="n15:"/>
     </node>
     <node id="n16" yfiles.foldertype="group">
-      <data key="d3"><![CDATA[27c41fe4-072b-4fce-b8cb-78c1fc16afb1]]></data>
-      <data key="d4"><![CDATA[Informational Systemic Parent Process]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[604efe83-44f5-4b40-851b-1a0ecca01117]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Informational Systemic Parent Process]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -445,13 +351,7 @@
               <y:Geometry height="90.0" width="150.0" x="0.0" y="390.0"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle color="#0000FF" type="line" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="81.654296875" x="34.1728515625" y="37.0">Info. Sys. Parent<y:LabelModel>
-                  <y:SmartNodeLabelModel distance="0.0"/>
-                </y:LabelModel>
-                <y:ModelParameter>
-                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                </y:ModelParameter>
-              </y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="97.515625" x="26.2421875" xml:space="preserve" y="35.93359375">Info. Sys. Parent<y:LabelModel><y:SmartNodeLabelModel distance="0.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="ellipse"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -461,7 +361,7 @@
               <y:Geometry height="90.0" width="150.0" x="170.5" y="225.0"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle color="#0000FF" type="line" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="124.05859375" x="12.970703125" y="33.811767578125">Processes Folded</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="128.5556640625" x="12.970703125" xml:space="preserve" y="33.811767578125">Processes Folded</y:NodeLabel>
               <y:Shape type="ellipse"/>
               <y:State closed="true" closedHeight="90.0" closedWidth="150.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
@@ -473,9 +373,9 @@
       <graph edgedefault="directed" id="n16:"/>
     </node>
     <node id="n17" yfiles.foldertype="group">
-      <data key="d3"><![CDATA[291184d1-71ec-463f-bb88-65d4cce6f1a6]]></data>
-      <data key="d4"><![CDATA[Physical Environmental Parent Process]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[3020bc86-46a9-4603-a056-3b36cdc3a07c]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Physical Environmental Parent Process]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -483,13 +383,7 @@
               <y:Geometry height="90.0" width="150.0" x="180.0" y="390.0"/>
               <y:Fill color="#FFFFFF" color2="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#0000FF" type="dashed" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="81.49609375" x="34.251953125" y="37.0">Phys.Env.Parent<y:LabelModel>
-                  <y:SmartNodeLabelModel distance="0.0"/>
-                </y:LabelModel>
-                <y:ModelParameter>
-                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                </y:ModelParameter>
-              </y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="95.013671875" x="27.4931640625" xml:space="preserve" y="35.93359375">Phys.Env.Parent<y:LabelModel><y:SmartNodeLabelModel distance="0.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="ellipse"/>
               <y:DropShadow color="#C0C0C0" offsetX="5" offsetY="5"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
@@ -500,7 +394,7 @@
               <y:Geometry height="90.0" width="150.0" x="356.0" y="225.0"/>
               <y:Fill color="#FFFFFF" color2="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#0000FF" type="dashed" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="124.05859375" x="12.970703125" y="33.811767578125">Processes Folded</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="128.5556640625" x="12.970703125" xml:space="preserve" y="33.811767578125">Processes Folded</y:NodeLabel>
               <y:Shape type="ellipse"/>
               <y:DropShadow color="#B3A691" offsetX="5" offsetY="5"/>
               <y:State closed="true" closedHeight="90.0" closedWidth="150.0" innerGraphDisplayEnabled="false"/>
@@ -513,9 +407,9 @@
       <graph edgedefault="directed" id="n17:"/>
     </node>
     <node id="n18" yfiles.foldertype="group">
-      <data key="d3"><![CDATA[4b92aa8c-e4ea-4235-b3b7-94d68412a768]]></data>
-      <data key="d4"><![CDATA[Informational Environmental Parent Process]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[462d8d87-d148-4fcd-ad56-c340e3e6699f]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Informational Environmental Parent Process]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -523,13 +417,7 @@
               <y:Geometry height="90.0" width="150.0" x="360.0" y="390.0"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle color="#0000FF" type="dashed" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="83.669921875" x="33.1650390625" y="37.0">Info. Env. Parent<y:LabelModel>
-                  <y:SmartNodeLabelModel distance="0.0"/>
-                </y:LabelModel>
-                <y:ModelParameter>
-                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-                </y:ModelParameter>
-              </y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="98.828125" x="25.5859375" xml:space="preserve" y="35.93359375">Info. Env. Parent<y:LabelModel><y:SmartNodeLabelModel distance="0.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="ellipse"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -539,7 +427,7 @@
               <y:Geometry height="90.0" width="150.0" x="542.0" y="225.0"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle color="#0000FF" type="dashed" width="2.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="124.05859375" x="12.970703125" y="33.811767578125">Processes Folded</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="free" modelPosition="anywhere" textColor="#000000" verticalTextPosition="bottom" visible="true" width="128.5556640625" x="12.970703125" xml:space="preserve" y="33.811767578125">Processes Folded</y:NodeLabel>
               <y:Shape type="ellipse"/>
               <y:State closed="true" closedHeight="90.0" closedWidth="150.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
@@ -967,9 +855,9 @@
       </data>
     </node>
     <node id="n51" yfiles.foldertype="group">
-      <data key="d3"><![CDATA[b48afd35-9f02-4d64-afaf-143a0b8d8dd7]]></data>
-      <data key="d4"><![CDATA[Group]]></data>
-      <data key="d5"/>
+      <data key="d3" xml:space="preserve"><![CDATA[2fc697b6-3edd-46ed-8be5-12b6e1621f65]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Group]]></data>
+      <data key="d6"/>
       <data key="d7">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -977,7 +865,7 @@
               <y:Geometry height="121.0" width="221.8" x="300.0" y="610.0"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle color="#000000" type="dotted" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasLineColor="false" height="16.0" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="false" width="221.8" x="0.0" y="0.0">Group</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Calibri Light" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="false" width="221.8" x="0.0" xml:space="preserve" y="0.0">Group</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -987,7 +875,7 @@
               <y:Geometry height="50.0" width="50.0" x="160.0" y="51.400000000000006"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="59.02685546875" x="-4.513427734375" y="0.0">Folder 1</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.75830078125" x="-6.879150390625" xml:space="preserve" y="0.0">Folder 1</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
@@ -999,8 +887,9 @@
       <graph edgedefault="directed" id="n51:"/>
     </node>
     <edge id="e0" source="n19" target="n20">
-      <data key="d9"><![CDATA[b1848194-25e8-47ff-84c1-afb7b7c4761d]]></data>
-      <data key="d10"><![CDATA[Aggregation-Participation]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[793ed237-5949-475e-a318-d72541edc7b6]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[Aggregation-Participation]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1017,8 +906,9 @@
       </data>
     </edge>
     <edge id="e1" source="n21" target="n22">
-      <data key="d9"><![CDATA[ea593b7b-f3dd-4a04-a090-e5ee1c2ef14f]]></data>
-      <data key="d10"><![CDATA[Exhibition-Characterization]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[bea90745-f65f-40e1-83f3-ab45e44b35b1]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[Exhibition-Characterization]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1032,13 +922,14 @@
       </data>
     </edge>
     <edge id="e2" source="n23" target="n24">
-      <data key="d9"><![CDATA[f218ef3c-a360-4ce8-a7df-25d2934e088b]]></data>
-      <data key="d10"><![CDATA[Generalization-Specialization]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[e6edf8cd-1e7d-46a9-ab68-747915a2f7bb]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[Generalization-Specialization]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
+          <y:Arrows source="none" target="white_delta_bar"/>
           <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="head" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="-6.0">
             <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
           </y:EdgeLabel>
@@ -1047,8 +938,9 @@
       </data>
     </edge>
     <edge id="e3" source="n25" target="n26">
-      <data key="d9"><![CDATA[dceddd9b-52d6-4cfc-be83-64f7cd2a1584]]></data>
-      <data key="d10"><![CDATA[Classification-Instantiation]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[19f5fc45-e870-4028-b788-165144559773]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[Classification-Instantiation]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1062,13 +954,14 @@
       </data>
     </edge>
     <edge id="e4" source="n27" target="n28">
-      <data key="d9"><![CDATA[adad1fa6-06d8-4f5c-ae09-7a2188de9fda]]></data>
-      <data key="d10"><![CDATA[Instrument]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[577f3695-1e35-41db-9aeb-1381e8714b44]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[Instrument]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="transparent_circle" target="none"/>
+          <y:Arrows source="none" target="transparent_circle"/>
           <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="head" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="-6.0">
             <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
           </y:EdgeLabel>
@@ -1077,13 +970,14 @@
       </data>
     </edge>
     <edge id="e5" source="n29" target="n30">
-      <data key="d9"><![CDATA[9653aa4e-527c-4e78-b375-8cf725651a97]]></data>
-      <data key="d10"><![CDATA[Agent]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[ba642f88-ea24-4274-b639-b8c3ed1922a2]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[Agent]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="circle" target="none"/>
+          <y:Arrows source="none" target="circle"/>
           <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="head" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="-6.0">
             <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
           </y:EdgeLabel>
@@ -1092,13 +986,14 @@
       </data>
     </edge>
     <edge id="e6" source="n31" target="n32">
-      <data key="d9"><![CDATA[3418d6ae-0802-4ffc-a9e8-2d8017246193]]></data>
-      <data key="d10"><![CDATA[Consumption]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[71f01048-8a7c-4b63-aeb6-47e68a4e722c]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[Consumption]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta_bar"/>
+          <y:Arrows source="none" target="white_delta"/>
           <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="head" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="-6.0">
             <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
           </y:EdgeLabel>
@@ -1107,13 +1002,14 @@
       </data>
     </edge>
     <edge id="e7" source="n33" target="n34">
-      <data key="d9"><![CDATA[44a89485-8800-4abb-baa6-df1d172c9cb6]]></data>
-      <data key="d10"><![CDATA[Effect Link]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[ea55bb25-dbed-47ff-8873-934ec326deb0]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[Effect Link]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="white_delta_bar" target="white_delta_bar"/>
+          <y:Arrows source="white_delta" target="white_delta"/>
           <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="head" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="-6.0">
             <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
           </y:EdgeLabel>
@@ -1122,65 +1018,65 @@
       </data>
     </edge>
     <edge id="e8" source="n35" target="n36">
-      <data key="d9"><![CDATA[70693a17-714a-4d94-ac85-10dee087e8d3]]></data>
-      <data key="d10"><![CDATA[Instrument Effect]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[4e617f41-b2b1-4097-b132-b2af175345c8]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[Instrument Effect]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="transparent_circle" target="none"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="two_pos" modelPosition="head" preferredPlacement="target" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="10.673828125" x="34.6630859375" y="-20.701171875">e<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" placement="target" side="anywhere" sideReference="relative_to_edge_flow"/>
-          </y:EdgeLabel>
+          <y:Arrows source="none" target="transparent_circle"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="shead" preferredPlacement="target" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="10.685546875" x="10.125" xml:space="preserve" y="-20.1328125">e<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" placement="target" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
     <edge id="e9" source="n37" target="n38">
-      <data key="d9"><![CDATA[486c5fab-4960-47c9-a49f-6bd08927b6ad]]></data>
-      <data key="d10"><![CDATA[Agent Effect]]></data>
-      <data key="d11"/>
+      <data key="d9" xml:space="preserve"><![CDATA[1f2d4b1d-3175-4f18-a63d-0c96e22c844c]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[Agent Effect]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="circle" target="none"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="two_pos" modelPosition="head" preferredPlacement="target" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="10.673828125" x="34.6630859375" y="-20.701171875">e<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" placement="target" side="anywhere" sideReference="relative_to_edge_flow"/>
-          </y:EdgeLabel>
+          <y:Arrows source="none" target="circle"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="shead" preferredPlacement="target" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="10.685546875" x="10.125" xml:space="preserve" y="-20.1328125">e<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" placement="target" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
     <edge id="e10" source="n39" target="n40">
-      <data key="d9"><![CDATA[25293dcd-1f12-4327-90d7-ab4196ae1cda]]></data>
-      <data key="d10"><![CDATA[Consumption Event]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[2c2773ff-9257-410d-9b05-2d90006b504c]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[Consumption Event]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta_bar"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="head" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="10.673828125" x="34.6630859375" y="-20.701171875">e<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
-          </y:EdgeLabel>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="shead" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="10.685546875" x="10.125" xml:space="preserve" y="-20.1328125">e<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
     <edge id="e11" source="n41" target="n42">
-      <data key="d9"><![CDATA[5a75732f-2480-48cc-8b61-cb46ef9caac0]]></data>
-      <data key="d10"><![CDATA[Tagged Structural Link]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[fdbfe5c8-4198-4693-a87b-9055b6c22181]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[Tagged Structural Link]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="plain"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="head" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="24.677734375" x="27.6611328125" y="-20.701171875">Tag<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
-          </y:EdgeLabel>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="six_pos" modelPosition="head" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="25.697265625" x="27.1513671875" xml:space="preserve" y="-20.1328125">Tag<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
     <edge id="e12" source="n43" target="n44">
-      <data key="d9"><![CDATA[1fc5b0fb-626b-4e05-a1e1-fede7249453d]]></data>
-      <data key="d10"><![CDATA[XOR]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[bd03c1d1-0b00-4f19-a197-575047939e4c]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[XOR]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1194,8 +1090,9 @@
       </data>
     </edge>
     <edge id="e13" source="n45" target="n46">
-      <data key="d9"><![CDATA[58245871-2982-4786-a2bd-f4aab194a6cd]]></data>
-      <data key="d10"><![CDATA[OR]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[20354eb6-6545-45de-ad11-25b15a500a73]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[OR]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1209,8 +1106,9 @@
       </data>
     </edge>
     <edge id="e14" source="n47" target="n48">
-      <data key="d9"><![CDATA[bd2263b4-297d-4304-ae19-b357f415e492]]></data>
-      <data key="d10"><![CDATA[Over-time Event]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[643010a0-2cb0-4724-9430-4e2458ea879f]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[Over-time Event]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1221,8 +1119,9 @@
       </data>
     </edge>
     <edge id="e15" source="n49" target="n50">
-      <data key="d9"><![CDATA[41264c56-8a9f-4827-bb23-bd019037e9cd]]></data>
-      <data key="d10"><![CDATA[Under-time Event]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[51af30d8-2fff-4d50-a0a3-eddb3420e122]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[Under-time Event]]></data>
+      <data key="d12"/>
       <data key="d13">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
