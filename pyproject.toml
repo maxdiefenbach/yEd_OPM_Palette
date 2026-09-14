@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yed-opm-palette"
+version = "0.1.0"
+description = "Extract OPM palette nodes and edges from yEd GraphML files."
+readme = {file = "README.org", content-type = "text/plain"}
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "lxml>=5",
+]
+
+[project.scripts]
+parse-opm = "parse_opm_graphml:cli"
+
+[tool.setuptools]
+py-modules = ["parse_opm_graphml"]
+package-dir = {"" = "src"}

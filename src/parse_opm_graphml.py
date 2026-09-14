@@ -1,25 +1,29 @@
 #!/usr/bin/env python3
 """
 Script to extract nodes and edges from a yEd GraphML palette file,
-using BeautifulSoup4 for XML parsing. Outputs JSON with two arrays:
-- nodes: each with id, tooltip, shape_type, border_type, dropshadow, is_group
-- edges: each with id, tooltip, source, target, arrow_tail, arrow_head, tag
+using BeautifulSoup4 for XML parsing. It outputs flattened CSV by default.
 
 Usage:
-    python3 parse_opm_graphml.py path/to/input.graphml
-    python3 parse_opm_graphml.py path/to/input.graphml -o path/to/output.csv
+    parse-opm path/to/input.graphml
+    parse-opm path/to/input.graphml --format json
+    parse-opm path/to/input.graphml -o path/to/output.csv
 """
 
 import argparse
+import csv
+import io
 import json
+import sys
+from pathlib import Path
+
 from bs4 import BeautifulSoup
-import pandas as pd
 
 
 # Columns shown in the stdout summary table, in display order. The CSV keeps
 # every extracted column; this is only the human-readable subset.
 SUMMARY_COLUMNS = [
     "id",
+    "label",
     "tooltip",
     "thing_type",
     "state_type",
@@ -30,6 +34,14 @@ SUMMARY_COLUMNS = [
     "tags",
 ]
 
+OUTPUT_FORMATS = ("csv", "json", "table")
+EXTENSION_FORMATS = {
+    ".csv": "csv",
+    ".json": "json",
+    ".table": "table",
+    ".txt": "table",
+}
+
 
 def extract_nodes(soup):
     """Extract and classify node definitions from a yEd GraphML soup.
@@ -39,6 +51,7 @@ def extract_nodes(soup):
 
     Returned node dictionaries contain at least:
     - id: GraphML node id
+    - label: visible y:NodeLabel text
     - tooltip: palette tooltip text (data[key=<palette_node_key>])
     - shape_type: y:Shape/@type (e.g. "rectangle", "roundrectangle", "ellipse")
     - border_type: y:BorderStyle/@type (e.g. "line", "dashed")
@@ -80,6 +93,12 @@ def extract_nodes(soup):
         tooltip = (
             tooltip_elem.text.strip() if tooltip_elem and tooltip_elem.text else ""
         )
+        labels = [
+            label.get_text(strip=True)
+            for label in node.find_all("NodeLabel")
+            if label.get_text(strip=True)
+        ]
+        label = labels[0] if labels else ""
         # Shape type under <Shape>
         shape_elem = node.find("Shape")
         shape_type = (
@@ -160,6 +179,7 @@ def extract_nodes(soup):
 
         node  = {
                 "id": nid,
+                "label": label,
                 "thing_type": thing_type,
                 "essence": essence,
                 "affiliation": affiliation,
@@ -182,6 +202,7 @@ def extract_edges(soup):
 
     For each <edge> element, this collects:
     - id: GraphML edge id
+    - label: first visible y:EdgeLabel text, if any
     - tooltip: palette tooltip text (data[key=<palette_edge_key>]) – informational only
     - source: id of the source node
     - target: id of the target node
@@ -241,6 +262,7 @@ def extract_edges(soup):
             for lbl in edge.find_all("EdgeLabel")
             if lbl.get_text(strip=True)
         ]
+        label = tags[0] if tags else ""
 
         # Normalize arrow markers to simple strings
         tail = arrow_tail or "none"
@@ -289,6 +311,7 @@ def extract_edges(soup):
         edges.append(
             {
                 "id": eid,
+                "label": label,
                 "tooltip": tooltip,
                 "source": src,
                 "target": tgt,
@@ -301,36 +324,94 @@ def extract_edges(soup):
     return edges
 
 
-def main(filepath, output_path=None):
-    """Parse a yEd GraphML palette file and emit JSON/CSV summaries.
+def format_value(value):
+    """Format values for terminal and CSV output."""
+    if isinstance(value, list):
+        return ", ".join(value)
+    if value is None:
+        return ""
+    return str(value)
 
-    The script reads the given GraphML file, extracts nodes and edges using
-    BeautifulSoup-based helpers, and prints a JSON representation plus a
-    summary table to stdout. A flattened CSV (nodes + edges) is written only
-    when ``output_path`` is given.
 
-    Parameters
-    ----------
-    filepath: str
-        Path to the yEd GraphML palette file.
-    output_path: str | None
-        Path where the flattened CSV output should be written, or None to
-        skip writing a CSV.
-    """
+def render_csv(rows):
+    """Render flattened node and edge rows as CSV."""
+    columns = sorted({column for row in rows for column in row})
+    output = io.StringIO()
+    writer = csv.DictWriter(output, fieldnames=columns, lineterminator="\n")
+    writer.writeheader()
+    for row in rows:
+        writer.writerow({column: format_value(row.get(column, "")) for column in columns})
+    return output.getvalue()
+
+
+def render_table(rows):
+    """Render flattened node and edge rows as a fixed-width summary table."""
+    columns = [column for column in SUMMARY_COLUMNS if any(column in row for row in rows)]
+    if not rows or not columns:
+        return ""
+
+    widths = {
+        column: max(len(column), *(len(format_value(row.get(column, ""))) for row in rows))
+        for column in columns
+    }
+    lines = ["  ".join(column.ljust(widths[column]) for column in columns)]
+    for row in rows:
+        lines.append(
+            "  ".join(
+                format_value(row.get(column, "")).ljust(widths[column])
+                for column in columns
+            )
+        )
+    return "\n".join(lines) + "\n"
+
+
+def render_json(nodes, edges):
+    """Render nodes and edges as structured JSON."""
+    return json.dumps({"nodes": nodes, "edges": edges}, indent=2) + "\n"
+
+
+def resolve_output_format(output_path=None, output_format=None):
+    """Resolve the output format from an explicit option or output extension."""
+    if output_format:
+        return output_format
+    if output_path:
+        suffix = Path(output_path).suffix.lower()
+        if suffix in EXTENSION_FORMATS:
+            return EXTENSION_FORMATS[suffix]
+        valid_extensions = ", ".join(sorted(EXTENSION_FORMATS))
+        raise ValueError(
+            f"Cannot infer output format from '{output_path}'. "
+            f"Use --format or one of these extensions: {valid_extensions}."
+        )
+    return "csv"
+
+
+def render_output(output_format, nodes, edges):
+    """Render nodes and edges in the selected output format."""
+    rows = nodes + edges
+    if output_format == "csv":
+        return render_csv(rows)
+    if output_format == "json":
+        return render_json(nodes, edges)
+    if output_format == "table":
+        return render_table(rows)
+    raise ValueError(f"Unsupported output format: {output_format}")
+
+
+def main(filepath, output_path=None, output_format=None):
+    """Parse a yEd GraphML palette file and emit formatted output."""
     with open(filepath, "r", encoding="utf-8") as f:
         soup = BeautifulSoup(f, "xml")
 
     nodes = extract_nodes(soup)
     edges = extract_edges(soup)
-    output = {"nodes": nodes, "edges": edges}
-    print(json.dumps(output, indent=2))
-    df = pd.json_normalize(nodes + edges)
-    pd.set_option("display.max_rows", None)
-    # Node and edge dicts omit keys that do not apply (e.g. no state_type when
-    # the graph has no states), so only summarize the columns actually present.
-    print(df[[column for column in SUMMARY_COLUMNS if column in df.columns]])
+    selected_format = resolve_output_format(output_path, output_format)
+    rendered_output = render_output(selected_format, nodes, edges)
     if output_path:
-        df.to_csv(output_path, index=False)
+        with open(output_path, "w", encoding="utf-8", newline="") as output_file:
+            output_file.write(rendered_output)
+    else:
+        sys.stdout.write(rendered_output)
 
 
 def parse_args():
@@ -345,12 +426,29 @@ def parse_args():
     parser.add_argument(
         "-o",
         "--output",
-        help="Path where the flattened CSV output should be written. "
-        "Omit to print the summaries without writing a CSV.",
+        help="Path where output should be written. "
+        "When --format is omitted, the file extension selects the format.",
     )
-    return parser.parse_args()
+    parser.add_argument(
+        "-f",
+        "--format",
+        choices=OUTPUT_FORMATS,
+        dest="output_format",
+        help="Output format. Defaults to csv for stdout.",
+    )
+    args = parser.parse_args()
+    try:
+        resolve_output_format(args.output, args.output_format)
+    except ValueError as error:
+        parser.error(str(error))
+    return args
+
+
+def cli():
+    """Console script entry point."""
+    args = parse_args()
+    main(args.filepath, args.output, args.output_format)
 
 
 if __name__ == "__main__":
-    args = parse_args()
-    main(args.filepath, args.output)
+    cli()
