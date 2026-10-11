@@ -95,19 +95,32 @@ processes.Name = matlab.lang.makeUniqueStrings(processes.Name);
 objects.Name = matlab.lang.makeUniqueStrings(objects.Name);
 links = findProcessObjectLinks(edges, nodes);
 
-prepareOutputFiles(functionalFile, logicalFile, allocationFile, options.Overwrite);
+outputTransaction = prepareOutputFiles( ...
+    functionalFile, logicalFile, allocationFile, options.Overwrite);
+try
+    % --- Step 2: functional architecture (one component per process) ----
+    [functionalModel, functionComponents] = buildArchitecture( ...
+        functionalFile, processes.Name);
 
-% --- Step 2: functional architecture (one component per process) --------
-[functionalModel, functionComponents] = buildArchitecture(functionalFile, processes.Name);
+    % --- Step 3: logical architecture (one component per object) --------
+    [logicalModel, logicalComponents] = buildArchitecture( ...
+        logicalFile, objects.Name);
 
-% --- Step 3: logical architecture (one component per object) ------------
-[logicalModel, logicalComponents] = buildArchitecture(logicalFile, objects.Name);
-
-% --- Step 4: allocation set (one allocation per process-object link) ----
-[~, functionIdx] = ismember(links.ProcessId, processes.Id);
-[~, componentIdx] = ismember(links.ObjectId, objects.Id);
-allocationSet = buildAllocationSet(allocationFile, functionalModel, logicalModel, ...
-    functionComponents(functionIdx), logicalComponents(componentIdx));
+    % --- Step 4: allocation set (one per unique process-object pair) -----
+    [~, functionIdx] = ismember(links.ProcessId, processes.Id);
+    [~, componentIdx] = ismember(links.ObjectId, objects.Id);
+    allocationSet = buildAllocationSet( ...
+        allocationFile, functionalModel, logicalModel, ...
+        functionComponents(functionIdx), logicalComponents(componentIdx));
+catch exception
+    try
+        rollbackOutputFiles(outputTransaction);
+    catch rollbackException
+        exception = addCause(exception, rollbackException);
+    end
+    rethrow(exception)
+end
+commitOutputFiles(outputTransaction);
 
 % --- Results -------------------------------------------------------------
 allocations = table(processes.Name(functionIdx), objects.Name(componentIdx), ...
@@ -164,12 +177,13 @@ allocationSet = systemcomposer.allocation.createAllocationSet( ...
 scenario = allocationSet.Scenarios(1);
 % Two links between the same process and object (e.g. consumption and
 % result) still give a single allocation.
-allocated = strings(0);
+allocated = strings(0, 2);
 for k = 1:numel(functionComponents)
-    pair = functionComponents(k).Name + "->" + logicalComponents(k).Name;
-    if ~ismember(pair, allocated)
+    pair = [string(functionComponents(k).Name), ...
+        string(logicalComponents(k).Name)];
+    if isempty(allocated) || ~any(all(allocated == pair, 2))
         scenario.allocate(functionComponents(k), logicalComponents(k));
-        allocated(end + 1) = pair; %#ok<AGROW>
+        allocated(end + 1, :) = pair; %#ok<AGROW>
     end
 end
 % A new allocation set is saved to the current folder, so save from there.
@@ -202,38 +216,152 @@ end
 file = struct("Path", fullfile(folder, name + ext), "Folder", folder, "Name", name);
 end
 
-function prepareOutputFiles(functionalFile, logicalFile, allocationFile, overwrite)
-%PREPAREOUTPUTFILES Create output folders; refuse to clobber unless overwrite.
+function transaction = prepareOutputFiles( ...
+        functionalFile, logicalFile, allocationFile, overwrite)
+%PREPAREOUTPUTFILES Validate, back up and remove previous output files.
 outputs = [functionalFile, logicalFile, allocationFile];
 paths = [outputs.Path];
-existing = paths(isfile(paths));
+existingMask = isfile(paths);
+existing = paths(existingMask);
 if ~isempty(existing) && ~overwrite
     error("opm2systemcomposer:OutputExists", ...
         "Output already exists: %s. Pass Overwrite=true to replace it.", ...
         strjoin(existing, ", "));
 end
+validateLoadedOutputs( ...
+    functionalFile, logicalFile, allocationFile, overwrite, existingMask);
+
 for folder = unique([outputs.Folder])
     if ~isfolder(folder)
         mkdir(folder);
     end
 end
-if ~overwrite
-    return
+
+transaction = struct;
+transaction.Paths = paths;
+transaction.BackupPaths = strings(size(paths));
+transaction.ModelNames = [functionalFile.Name, logicalFile.Name];
+transaction.AllocationName = allocationFile.Name;
+
+if overwrite
+    try
+        for k = find(existingMask)
+            transaction.BackupPaths(k) = string(tempname(outputs(k).Folder)) + ".bak";
+            copyfile(paths(k), transaction.BackupPaths(k), "f");
+        end
+    catch exception
+        try
+            commitOutputFiles(transaction);
+        catch cleanupException
+            exception = addCause(exception, cleanupException);
+        end
+        rethrow(exception)
+    end
 end
 
-% Close what a previous run left open, allocation set first because it
-% references both models.
+try
+    % Close the allocation set first because it references both models.
+    openSet = systemcomposer.allocation.AllocationSet.find(allocationFile.Name);
+    if ~isempty(openSet)
+        openSet.close(true);
+    end
+    for name = transaction.ModelNames
+        if bdIsLoaded(name)
+            close_system(name, 0);
+        end
+    end
+    for path = existing
+        delete(path);
+    end
+catch exception
+    try
+        rollbackOutputFiles(transaction);
+    catch rollbackException
+        exception = addCause(exception, rollbackException);
+    end
+    rethrow(exception)
+end
+end
+
+function validateLoadedOutputs( ...
+        functionalFile, logicalFile, allocationFile, overwrite, existingMask)
+%VALIDATELOADEDOUTPUTS Refuse to close dirty or unrelated loaded artifacts.
+for file = [functionalFile, logicalFile]
+    if ~bdIsLoaded(file.Name)
+        continue
+    end
+    loadedPath = string(get_param(file.Name, "FileName"));
+    if ~overwrite || loadedPath == "" || ~sameFile(loadedPath, file.Path)
+        error("opm2systemcomposer:LoadedModelConflict", ...
+            "Model '%s' is already loaded from '%s'. Close it or choose " + ...
+            "a different output model name.", file.Name, loadedPath);
+    end
+    if get_param(file.Name, "Dirty") == "on"
+        error("opm2systemcomposer:UnsavedModelChanges", ...
+            "Model '%s' has unsaved changes. Save or close it before " + ...
+            "overwriting %s.", file.Name, file.Path);
+    end
+end
+
 openSet = systemcomposer.allocation.AllocationSet.find(allocationFile.Name);
+if isempty(openSet)
+    return
+end
+if ~overwrite || ~existingMask(3)
+    error("opm2systemcomposer:LoadedAllocationSetConflict", ...
+        "Allocation set '%s' is already loaded. Close it or choose a " + ...
+        "different output allocation set name.", allocationFile.Name);
+end
+if any([openSet.Dirty])
+    error("opm2systemcomposer:UnsavedAllocationChanges", ...
+        "Allocation set '%s' has unsaved changes. Save or close it before " + ...
+        "overwriting %s.", allocationFile.Name, allocationFile.Path);
+end
+end
+
+function rollbackOutputFiles(transaction)
+%ROLLBACKOUTPUTFILES Remove partial output and restore overwritten files.
+openSet = systemcomposer.allocation.AllocationSet.find( ...
+    transaction.AllocationName);
 if ~isempty(openSet)
     openSet.close(true);
 end
-for name = [functionalFile.Name, logicalFile.Name]
+for name = transaction.ModelNames
     if bdIsLoaded(name)
         close_system(name, 0);
     end
 end
-for path = existing
-    delete(path);
+for path = transaction.Paths
+    if isfile(path)
+        delete(path);
+    end
+end
+for k = find(transaction.BackupPaths ~= "")
+    backupPath = transaction.BackupPaths(k);
+    if isfile(backupPath)
+        copyfile(backupPath, transaction.Paths(k), "f");
+        delete(backupPath);
+    end
+end
+end
+
+function commitOutputFiles(transaction)
+%COMMITOUTPUTFILES Remove rollback copies after successful conversion.
+for backupPath = transaction.BackupPaths(transaction.BackupPaths ~= "")
+    if isfile(backupPath)
+        delete(backupPath);
+    end
+end
+end
+
+function tf = sameFile(first, second)
+%SAMEFILE Compare canonical file paths using platform path semantics.
+first = string(java.io.File(char(first)).getCanonicalPath());
+second = string(java.io.File(char(second)).getCanonicalPath());
+if ispc
+    tf = strcmpi(first, second);
+else
+    tf = first == second;
 end
 end
 
@@ -327,17 +455,25 @@ links = table(edges.Id(keep), ProcessId(keep), ObjectId(keep), LinkType(keep), .
     VariableNames=["EdgeId" "ProcessId" "ObjectId" "LinkType"]);
 end
 
-function type = linkType(tail, head, pointsToProcess)
+function type = linkType(tail, head, targetIsProcess)
 %LINKTYPE Name the OPM procedural link drawn with the palette's arrow heads.
-if tail == "white_delta" && head == "white_delta"
+if targetIsProcess
+    processArrow = head;
+    objectArrow = tail;
+else
+    processArrow = tail;
+    objectArrow = head;
+end
+
+if processArrow == "white_delta" && objectArrow == "white_delta"
     type = "effect";
-elseif head == "circle"
+elseif processArrow == "circle"
     type = "agent";
-elseif head == "transparent_circle"
+elseif processArrow == "transparent_circle"
     type = "instrument";
-elseif head == "white_delta" && pointsToProcess
+elseif processArrow == "white_delta"
     type = "consumption";
-elseif head == "white_delta"
+elseif objectArrow == "white_delta"
     type = "result";
 else
     type = tail + "->" + head;

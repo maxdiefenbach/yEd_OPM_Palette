@@ -132,8 +132,10 @@ And a `result` struct for further scripting:
   and yields the same object, give one allocation. The `Allocations` table
   still lists every link.
 - **Existing output** is never overwritten silently: the function errors
-  unless you pass `Overwrite=true`, which closes the old models and
-  allocation set and deletes their files first.
+  unless you pass `Overwrite=true`. Overwrite refuses to discard unsaved
+  model or allocation changes and refuses same-named models loaded from a
+  different path. Existing files are restored and partial artifacts are
+  removed if conversion fails.
 - **Objects are recognised by color.** If you recolored the object boxes,
   pass their border color via `ObjectBorderColor`.
 - **Reopening later:** the allocation set refers to the two models by
@@ -148,4 +150,5 @@ And a `result` struct for further scripting:
 |---------------------------------------------|-----------------------------------------|
 | `opm2systemcomposer.m`                      | The conversion function (`help opm2systemcomposer`) |
 | `run_coffee_machine_example.m`              | Runnable example                        |
+| `tests/test_opm2systemcomposer.m`            | MATLAB regression tests                 |
 | `../graphml/testdata/coffee_machine.graphml`| Example OPM diagram built from the palette styles |
