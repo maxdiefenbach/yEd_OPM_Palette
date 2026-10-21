@@ -147,7 +147,11 @@ def extract_nodes(soup):
             except ValueError:
                 width_val = 1.0
             is_thick = width_val >= 3.0
-            is_dashed = dash_style not in (None, "solid")
+            # yEd writes dashed borders as BorderStyle type="dashed" (the
+            # palette's Final State uses this); older files may use dashStyle.
+            is_dashed = border_type in ("dashed", "dotted", "dashed_dotted") or (
+                dash_style not in (None, "solid")
+            )
 
             if is_thick and not is_dashed:
                 state_type = "initial"
